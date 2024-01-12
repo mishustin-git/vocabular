@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VocabularController;
+use App\Http\Controllers\DictionaryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +18,8 @@ use App\Http\Controllers\VocabularController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', [VocabularController::class, 'showAllWords']);
+// Route::get('/', [VocabularController::class, 'showAllWords']);
+Route::get('/', [DictionaryController::class, 'index']);
 // Route::get('/vocabular',function(){
 //     return 'vocabular will be here';
 // });
